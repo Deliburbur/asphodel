@@ -87,11 +87,11 @@ a {
     padding: 2rem;
 }
 
-.nav-list a:hover {
+/* .nav-list a:hover {
     background: var(--sona-eye);
     transform: translateY(5px);
     padding-bottom: 15px;
-}
+} */
 
 /* Navigation Media Query */
 @media (max-width: 28.75em) {
@@ -101,6 +101,14 @@ a {
   
     .nav-list {
       margin: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .nav-list a:hover {
+        background: var(--sona-eye);
+        transform: translateY(5px);
+        padding-bottom: 15px;
     }
 }
 
