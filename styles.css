@@ -133,6 +133,16 @@ a {
     z-index: 10;
 }
 
+
+.alert {
+    color: var(--sona-eye);
+    z-index: 11;
+}
+
+.version {
+    font-size: 12px;
+}
+
 .plz {
     position: relative;
     padding: 50px;
@@ -141,12 +151,13 @@ a {
     left: 150px;
     text-align: center;
     border-radius: 20px;
-    background: linear-gradient(
+    /* background: linear-gradient(
         45deg,
         var(--sona-blue),
         var(--sona-blue) 10%,
         var(--sona-blue-lite)
-    );
+    ); */
+    background-color: rgba(0, 29, 181, 0.8);
     z-index: 10;
 }
 
