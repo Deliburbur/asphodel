@@ -1,0 +1,316 @@
+/* Variables */
+:root {
+    --base-white: white;
+    --sona-black: #323232;
+    --sona-blue: #001db5;
+    --sona-blue-lite: #1d39ca;
+    --sona-eye: #7795fd;
+    --gradient-black-dark: black;
+    --gradient-black-light: rgb(17, 17, 17);
+}
+
+/* TEMPORARY BACKGROUND SO I CAN SEE */
+body {
+    background-color: black;
+}
+
+/* Spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sizing */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* scroll-behavior: smooth; */
+}
+
+/* Styling */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--base-white);
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+    color: var(--base-white);
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background: var(--sona-blue); */
+    background-color: rgba(0, 29, 181, 0.4);
+    box-shadow: 0 2px 0 var(--sona-blue-lite);
+    z-index: 11;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background: var(--sona-eye);
+    transform: translateY(5px);
+    padding-bottom: 15px;
+}
+
+/* Navigation Media Query */
+@media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--sona-blue);
+    background-image: url(/vrc-photos/spaceshrug.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+};
+
+.sona-info {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--sona-blue);
+    z-index: 10;
+}
+
+.plz {
+    position: relative;
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+    left: 150px;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(
+        45deg,
+        var(--sona-blue),
+        var(--sona-blue) 10%,
+        var(--sona-blue-lite)
+    );
+    z-index: 10;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.vrc-btn {
+    font-size: 2rem;
+    background: var(--sona-eye);
+}
+
+.btn:hover {
+    background: var(--sona-black);
+    transform: translateY(2px);
+}
+
+/* Sona Art AND VRC Photos */
+.sona-art, .vrc-pics {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: linear-gradient(
+        45deg,
+        var(--gradient-black-light),
+        var(--gradient-black-light) 60%,
+        var(--gradient-black-dark)
+    );
+}
+
+.art-pic, .vrc-photo {
+    /* width: 396px; */
+    /* height: 477px */
+    width: auto;
+    height: auto;
+    max-height: 477px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* Transition One */
+#trans1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--sona-blue);
+    background-image: url(/vrc-photos/lynxaqua.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Contact Me */
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    padding: 0 2rem;
+    background: var(--sona-blue);
+}
+
+@media (max-width: 28.75em) {
+    .contact-header > h2 {
+      font-size: 4rem;
+    }
+}
+
+.contact-header > h2 {
+    font-size: 6rem;
+}
+
+.contact-header > p {
+    font-style: italic;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+/* Transition 2 */
+
+#trans2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    height: 50vh;
+    background-color: var(--sona-blue);
+    background-image: url(/vrc-photos/corvixgames.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* Footer Styling */
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    /* background: var(--sona-blue); */
+    background-color: rgba(0, 29, 181, 0.6);
+    background-image: url(/vrc-photos/corvixgames.png);
+}
+  
+footer > p {
+    margin: 2rem;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+  
+/* General Media Queries */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+}
+  
+@media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+}
+  
+@media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+}
