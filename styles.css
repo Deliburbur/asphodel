@@ -280,7 +280,7 @@ a {
     width: 100%;
     height: 50vh;
     background-color: var(--sona-blue);
-    background-image: url(/vrc-photos/lynxaqua.png);
+    background-image: url(/vrc-photos/ohno.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -347,7 +347,7 @@ a {
     width: 100%;
     height: 50vh;
     background-color: var(--sona-blue);
-    background-image: url(/vrc-photos/corvixgames.png);
+    background-image: url(/vrc-photos/fear.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -363,7 +363,7 @@ footer {
     padding: 2rem;
     /* background: var(--sona-blue); */
     background-color: rgba(0, 29, 181, 0.6);
-    background-image: url(/vrc-photos/corvixgames.png);
+    background-image: url(/vrc-photos/ohno.png);
 }
   
 footer > p {
